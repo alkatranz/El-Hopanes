@@ -47,6 +47,8 @@ section a{
 }
 section{
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .naglowekSekcji{
     display: flex;
@@ -98,10 +100,11 @@ nav img{
     height: 100%;
 }
 header div:first-of-type{
-    float:left;
-    position: relative;
-    width: 500px;
-    height: 400px;
+    float: left;
+    position: absolute;
+    width: 60%;
+    height: 95%;
+    bottom: 0;
 }
 header div:first-of-type>img{
     opacity: 0.5;
@@ -109,22 +112,20 @@ header div:first-of-type>img{
     width: 100%;
 }
 header div:nth-of-type(2){
-    float: right;
-    width: 380px;
+    width: 50%;
     padding-right: 20px;
     text-align: right;
     position: relative;
 }
-header div:nth-of-type(2) *{
-    margin-top: 20px;
-}
 header div:nth-of-type(2) img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin-right: 20px;
+    margin-top:0;
 }
 header div:nth-of-type(2) p{
     overflow-x: visible;
+    margin-top: 20px;
 }
 header div:nth-of-type(2)>p:last-child{
     background: rgb(255,255,255);
@@ -135,9 +136,10 @@ header div:nth-of-type(2)>p:last-child{
     right: -20px;
 }
 header>section{
-    height: 400px;
-    padding-top:100px;
+    padding-top:70px;
     text-transform: uppercase;
+    position: relative;
+    text-align: -webkit-right;
 }
 h2{
     display: inline;
@@ -146,26 +148,28 @@ h2{
 #szyld{
     background-image: url("grafiki/tla/tlo2.jpg");
     position: relative;
-    padding-top:150px;
-    height: 300px;
+    padding-top:120px;
     padding-bottom:50px;
+    text-align: -webkit-right;
 }
 #szyld>div:first-of-type{
     display: block;
-    width: 480px;
+    width: 57%;
     padding-right: 20px;
-    float: right;
+    text-align: center;
+
 }
 #szyld>div:nth-of-type(2){
     width:400px;
     height: 400px;
     position: absolute;
     left:0;
-    bottom: 0;
+    bottom: 50px;
 }
 #szyld>div:last-child>img{
     width: 100%;
     height: 100%;
+    opacity: 0.8;
 }
 #szyld p:first-of-type{
     margin-top:20px;
@@ -176,8 +180,7 @@ h2{
 }
     /*      REZERWACJA/FORM     */
 #rezerwacja{
-    height: 450px;
-    padding-top: 50px;
+    padding:30px 0;
     background-image: url("grafiki/tla/tlo3.jpg");
 }
 #rezerwacja>*{
@@ -187,26 +190,21 @@ h2{
     width: 700px;
     margin: auto;
 }
-#rezerwacja form>div>div{
-    display: block;
+.formWiersz{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 50px;
     margin-top:30px;
 }
-#rezerwacja div>div>div{
+.formWiersz>div{
+    height: 60px;
     width: 250px;
-}
-#rezerwacja div>div>div:first-child{
-    float:left;
-}
-#rezerwacja div>div>div:last-child{
-    float: right;
 }
 #rezerwacja label, #rezerwacja input, #rezerwacja select{
     box-sizing: border-box;
     text-align: left;
     width: 100%;
-    height: 30px;
+    height: 50%;
 }
 #rezerwacja input, #rezerwacja select{
     color:white;
@@ -217,7 +215,7 @@ h2{
     color:white;
 }
 #rezerwacja select, input[type="date"]{
-    background: url(./grafiki/listTriangle.png) no-repeat right;
+    background: url('./grafiki/listTriangle.png') no-repeat right;
     -webkit-appearance: none;
     background-position-x: calc(100% - 10px);
     background-size: 10px;
@@ -250,6 +248,7 @@ h2{
     background-color: rgba(255, 255, 255, 0);
 }
 #rezerwacja button{
+    margin-top:20px;
     background-color: gold;
     color:black;
     width: 200px;
@@ -275,8 +274,8 @@ h2{
     margin-bottom:50px;
 }
 #zdjecia{
-    position: relative;
     box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -315,12 +314,10 @@ h2{
     height: 100%;
 }
     /*      OPINIA      */
-#opinia{
-    height: 700px
-}
 #opinia>img{
     width: 100%;
     height: 550px;
+    display: block;
 }
 #opinia>div{
     background-image: url("grafiki/obrazkiDoTla/obrazekDoTla4.jpg");
@@ -328,16 +325,15 @@ h2{
     padding-bottom:10px;
     height: 130px;
     width: 100%;
-    top:-10px;
-    position: relative;
+    font-size:20px;
+    color:yellow
 }
 #opinia>div>b{
     font-size: xx-large;
-    color:yellow;
+    position: absolute;
 }
-#opinia>div>p:last-child{
-    color:yellow;
-    font-size: 20px;
+#opinia p:first-of-type{
+    color:white;
 }
     /*      MAPA        */
 #mapa{
@@ -345,14 +341,14 @@ h2{
     padding:50px 0;
     position: relative;
     overflow: hidden;
-	height:500px;
 }
 #map{
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 70%;
+    width: 500px;
+    height: 450px;
+    box-sizing: border-box;
     float: left;
 }
 #map > iframe{
@@ -382,7 +378,10 @@ h2{
     margin:20px 0;
 }
 footer{
-	margin-top:30px;
+    margin-top:30px;
+}
+#kontakt p,footer p{
+    text-shadow: 1px 1px 5px black;
 }
 	/*			O NAS			*/
 #oNas{
@@ -391,6 +390,7 @@ footer{
 	background-image:url("./grafiki/tla/tlo2.jpg");
 	font-size:large;
 }
+    /*      MENU I ALKOHOLE     */
 #menu {
     display: flex;
     flex-wrap: wrap;
@@ -411,11 +411,72 @@ footer{
     width: 100%;
 }
 @media only screen and (max-width: 760px){
-    #tlo1{display:none;}
+    *{
+        font-size:large;
+    }
+    nav ul{
+        font-size:large;
+    }
+    h1{
+        font-size:40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    header p{
+        font-size:large;
+    }
+    #tlo1, #tlo2{display:none;}
     #galeria{
-        height: 1000px;
+        height: unset;
+    }
+    #szyld p:first-of-type {
+        font-size:20px;
+    }
+    #zdjecia{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     #zdjecia>a{
-        width: 49%;
+        flex-shrink: 0;
+        width: 49% !important;
+        height: 300px !important;
+        flex:none;
+        margin:4px;
+    }
+    .formWiersz{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+    .formWiersz>div{
+        margin:10px 0;
+        width: 100%;
+        height: 100px;
+        float: none !important;
+        font-size: large;
+    }
+    form>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #rezerwacja select, input[type="date"], input[type="time"]{
+        background-size: 20px !important;
+    }
+    #mapa > img{
+        display: none;
+    }
+    #map{
+        float:none;
+        margin:auto;
+    }
+    #map p {
+        font-size: 30px;
+    }
+    #kontakt p {
+        font-size: 25px;
+        
     }
 }
