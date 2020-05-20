@@ -1,0 +1,421 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+    background-color: #1c1c1c;
+    color: white;
+}
+p{
+    margin:20px 0;
+}
+main{
+    margin:auto;
+    width: 900px;
+    text-align: center;
+    position: relative;
+}
+.tlo{
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    left:0;
+    top:0;
+    position: fixed;
+    opacity: 0.5;
+    background-repeat: no-repeat ;
+    background-size: contain;
+}
+#tlo1{
+    background-image: url("./grafiki/obrazkiDoTla/obrazekDoTla6.png");
+    background-position: center left;
+}
+#tlo2{
+    background-image: url("./grafiki/obrazkiDoTla/obrazekDoTla7.png");
+    background-position: center right;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+section a{
+    color:yellow;
+}
+section{
+    width: 100%;
+}
+.naglowekSekcji{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.naglowekSekcji h2{
+    padding: 0 20px;
+}
+.naglowekSekcji a{
+	color:white;
+}
+.naglowekSekcji img{
+    height: 30px !important;
+    width: 60px !important;
+    display: block;
+}
+    /*      HEADER + NAV     */
+header{
+    padding:50px 0;
+    background-image: url("grafiki/tla/tlo1.jpg");
+    text-align: right;
+}
+nav{
+    width: 94%;
+    padding: 0 3% 0 3%;
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 100px;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    text-align: center;
+    width: 15%;
+    margin: 5px;
+}
+nav img{
+    width: 100%;
+    height: 100%;
+}
+header div:first-of-type{
+    float:left;
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+header div:first-of-type>img{
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+header div:nth-of-type(2){
+    float: right;
+    width: 380px;
+    padding-right: 20px;
+    text-align: right;
+    position: relative;
+}
+header div:nth-of-type(2) *{
+    margin-top: 20px;
+}
+header div:nth-of-type(2) img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+header div:nth-of-type(2) p{
+    overflow-x: visible;
+}
+header div:nth-of-type(2)>p:last-child{
+    background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.30) 100%);
+    padding: 10px;
+    font-size:xx-large;
+    position: relative;
+    right: -20px;
+}
+header>section{
+    height: 400px;
+    padding-top:100px;
+    text-transform: uppercase;
+}
+h2{
+    display: inline;
+}
+    /*      SZYLD     */
+#szyld{
+    background-image: url("grafiki/tla/tlo2.jpg");
+    position: relative;
+    padding-top:150px;
+    height: 300px;
+    padding-bottom:50px;
+}
+#szyld>div:first-of-type{
+    display: block;
+    width: 480px;
+    padding-right: 20px;
+    float: right;
+}
+#szyld>div:nth-of-type(2){
+    width:400px;
+    height: 400px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+#szyld>div:last-child>img{
+    width: 100%;
+    height: 100%;
+}
+#szyld p:first-of-type{
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+#szyld p:last-of-type{
+    font-size:xx-large
+}
+    /*      REZERWACJA/FORM     */
+#rezerwacja{
+    height: 450px;
+    padding-top: 50px;
+    background-image: url("grafiki/tla/tlo3.jpg");
+}
+#rezerwacja>*{
+    margin-top:20px;
+}
+#rezerwacja form>div{
+    width: 700px;
+    margin: auto;
+}
+#rezerwacja form>div>div{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top:30px;
+}
+#rezerwacja div>div>div{
+    width: 250px;
+}
+#rezerwacja div>div>div:first-child{
+    float:left;
+}
+#rezerwacja div>div>div:last-child{
+    float: right;
+}
+#rezerwacja label, #rezerwacja input, #rezerwacja select{
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+}
+#rezerwacja input, #rezerwacja select{
+    color:white;
+    padding:5px;
+    padding-left:10px !important;
+}
+#rezerwacja input::placeholder{
+    color:white;
+}
+#rezerwacja select, input[type="date"]{
+    background: url(./grafiki/listTriangle.png) no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: calc(100% - 10px);
+    background-size: 10px;
+}
+#rezerwacja input[type="date"]::-webkit-calendar-picker-indicator{
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+#rezerwacja input::-webkit-inner-spin-button{
+    display: none;
+}
+#rezerwacja input::-webkit-clear-button{
+    display: none;
+}
+#rezerwacja input[type="time"]{
+    background: url(./grafiki/clock.png) no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: calc(100% - 10px);
+    background-size: 10px;
+}
+#rezerwacja select>option{
+    color:black;
+}
+#rezerwacja label{
+    display: block;
+}
+#rezerwacja input, #rezerwacja select{
+    border: 1px solid gold;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#rezerwacja button{
+    background-color: gold;
+    color:black;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid gold;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+}
+#rezerwacja button:active{
+    border: 2px inset gold;
+    border-radius: 10px;
+}
+    /*      GALERIA     */
+#galeria{
+    height: 700px;
+    padding:50px 0;
+    background-image: url("./grafiki/tla/tlo4.jpg");
+}
+#galeria>div:first-child{
+    margin-bottom:50px;
+}
+#zdjecia{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+    margin:auto;
+    height: 85%;
+    text-align: center;
+    align-content: space-around;
+    
+}
+#zdjecia a{
+    flex:1;
+    width: 240px;
+    margin-bottom:10px;
+}
+#zdjecia a:last-child, #zdjecia a:nth-last-child(2){
+    width: 280px;
+}
+#zdjecia a:nth-child(1){
+    height: 67%;
+}
+#zdjecia a:nth-child(2){
+    height: 37%;
+}
+#zdjecia a:nth-child(3),
+#zdjecia a:nth-child(4),
+#zdjecia a:nth-child(5),
+#zdjecia a:nth-child(6){
+    height: 31%;
+}
+#zdjecia a:nth-child(7){
+    height: 64%;
+}
+#zdjecia img{
+    width: 100%;
+    height: 100%;
+}
+    /*      OPINIA      */
+#opinia{
+    height: 700px
+}
+#opinia>img{
+    width: 100%;
+    height: 550px;
+}
+#opinia>div{
+    background-image: url("grafiki/obrazkiDoTla/obrazekDoTla4.jpg");
+    padding-top:20px;
+    padding-bottom:10px;
+    height: 130px;
+    width: 100%;
+    top:-10px;
+    position: relative;
+}
+#opinia>div>b{
+    font-size: xx-large;
+    color:yellow;
+}
+#opinia>div>p:last-child{
+    color:yellow;
+    font-size: 20px;
+}
+    /*      MAPA        */
+#mapa{
+    background-image: url("./grafiki/tla/tlo5.jpg");
+    padding:50px 0;
+    position: relative;
+    overflow: hidden;
+	height:500px;
+}
+#map{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    float: left;
+}
+#map > iframe{
+    width: 100%;
+    height: 100%;
+}
+#mapa>img{
+    position: absolute;
+    right: -25%;
+    top:0;
+    transform: rotate(180deg);
+
+}
+#mapa>div:first-child{
+    margin-bottom:50px;
+}
+    /*      KONTAKT I STOPKA     */
+#kontakt{
+    width: unset;
+    padding-top:100px;
+    font-size: large;
+}
+#kontakt>h2{
+    color:yellow;
+}
+#kontakt>p{
+    margin:20px 0;
+}
+footer{
+	margin-top:30px;
+}
+	/*			O NAS			*/
+#oNas{
+	box-sizing:border-box;
+	padding: 20px;
+	background-image:url("./grafiki/tla/tlo2.jpg");
+	font-size:large;
+}
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+#menu img{
+    width: 49%;
+    margin-bottom: 5px;
+}
+#menu img:nth-child(odd){
+    margin-right: 5px;
+}
+#menu img:nth-child(even){
+    margin-right: 5px;
+}
+#menu img[src="./grafiki/menu.jpg"]{
+    width: 100%;
+}
+@media only screen and (max-width: 760px){
+    #tlo1{display:none;}
+    #galeria{
+        height: 1000px;
+    }
+    #zdjecia>a{
+        width: 49%;
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Hopanes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>     
+    <main>
+        <div class="tlo" id="tlo1"></div>
+        <div class="tlo" id="tlo2"></div>
+        <!--Nagłówek-->
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="onas.html">O NAS</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">MENU</a>
+                    </li>
+                    <li>
+                        <a href="alkohole.html">ALKOHOLE</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="grafiki/logo.png" alt="logo restauracji"></a>
+                    </li>
+                    <li>
+                        <a href="#rezerwacja">REZERWACJE</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">GALERIA</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <div>
+                    <img src="grafiki/obrazkiDoTla/obrazekDoTla1.png" alt="taco">
+                </div>
+                <div>
+                    <h1>Restauracja El Hopanes</h1>
+                    <p>
+                        NAJLEPSZE MEKSYKAŃSKIE JEDZENIE<br>
+                        TYLKO U NAS!
+                    </p>
+                    <p><a href="onas.html">Dowiedz się więcej...</a></p>
+                    <a href="index.html"><img src="grafiki/logo.png" alt="logo restauracji"></a>
+                    <p>
+                        ODWIEDŹ NAS<br>
+                        JUŻ TERAZ
+                    </p>
+                </div>
+            </section>
+        </header>
+        <!--Jakiś szyld reklamujący restauracje-->
+        <section id="szyld">
+            <div>
+                <div class="naglowekSekcji">
+                    <img src="./grafiki/frendzel.png">
+                    <h2>ZGODNIE Z DUCHEM<br>
+                    WIELOLETNIEJ TRADYCJI</h2>
+                    <img src="./grafiki/frendzel.png">
+                </div>
+                <p>
+                    Nasze potrawy są robione pod okiem meksykańskiego szefa kuchni, który dba aby oddawały one klimat Meksyku. <br>
+                    Serwujemy nie tylko znane wszystkim burrito, taco czy quesadilla, ale również Birra czy też Ceviche. <br>
+                    Nie wiesz, a chcesz spróbować?
+                </p>
+                <p>ZATEM ZAPRASZAMY CIĘ SERDECZNIE DO <a href="#mapa">NAS!</a></p>
+                
+            </div>
+            <div><img src="grafiki/obrazkiDoTla/obrazekDoTla2.png" alt="Obrazek do tła"></div>
+        </section>
+        <!--Rezerwacja-->
+        <section id="rezerwacja">
+            <div class="naglowekSekcji">
+                <img src="./grafiki/frendzel.png">
+                <h2>ZAREZERWUJ MIEJSCE</h2>
+                <img src="./grafiki/frendzel.png">
+            </div>
+            <h3>Zarezerwuj stolik i zasmakuj meksykańskiej kuchni</h3>
+            <form action="#" method="POST" autocomplete="off">
+                <div>
+                    <div>
+                        <div>
+                            <label for="name">Jak się nazywasz ?</label>
+                            <input type="text" id="name" name="name" placeholder="Podaj swoje imie i nazwisko ..">
+                        </div>
+                        <div>
+                            <label for="email">Jaki jest twój adres email ?</label>
+                            <input type="email" id="email" name="email" placeholder="Podaj swój adres email ..">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="numberOfGuests">Dla ilu osób ?</label>
+                            <select id="numberOfGuests" name="numberOfGuests">
+                                <option value="1">1 osoba</option>
+                                <option value="2" selected>2 osoby</option>
+                                <option value="3">3 osoby</option>
+                                <option value="4">4 osoby</option>
+                                <option value="5">5 osób</option>
+                                <option value="6">6 osób</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="time">O której godzinie ?</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="date">Na jaki dzień ?</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Jaki jest twój numer telefonu ?</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Podaj swój numer telefonu ..">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">POTWIERDŹ</button>
+                    </div>
+                </div>        
+            </form>
+        </section>
+        <!--Galeria-->
+        <section id="galeria">
+            <div class="naglowekSekcji">
+                <img src="./grafiki/frendzel.png">
+                <h2><a href="galeria.html">GALERIA</a></h2>
+                <img src="./grafiki/frendzel.png">
+            </div>
+            <div id="zdjecia">
+                <a href="grafiki/galeria/zdjecie1.jpg"><img src="grafiki/galeria/zdjecie1.jpg" alt="szef kuchni"></a>
+                <a href="grafiki/galeria/zdjecie2.jpg"><img src="grafiki/galeria/zdjecie2.jpg" alt="mini burrito"></a>
+                <a href="grafiki/galeria/zdjecie3.jpg"><img src="grafiki/galeria/zdjecie3.jpg" alt="taco"></a>
+                <a href="grafiki/galeria/zdjecie4.jpg"><img src="grafiki/galeria/zdjecie4.jpg" alt="taco"></a>
+                <a href="grafiki/galeria/zdjecie5.jpg"><img src="grafiki/galeria/zdjecie5.jpg" alt="wnętrze restauracji"></a>
+                <a href="grafiki/galeria/zdjecie6.jpg"><img src="grafiki/galeria/zdjecie6.jpg" alt="zupa"></a>
+                <a href="grafiki/galeria/zdjecie7.jpg"><img src="grafiki/galeria/zdjecie7.jpg" alt="wnętrze restauracji"></a>
+            </div>
+        </section>
+        <!--Opinia-->
+        <section id="opinia">
+            <img src="grafiki/obrazkiDoTla/obrazekDoTla3.jpg" alt="jedzenie meksykańskie">
+            <div>
+                <b>"</b>
+                <p>El Hopanes - Szanuję i polecam</p>
+                <p>Piotr Fronczewski</p>
+            </div>
+        </section>
+        <!--Mapa-->
+        <section id="mapa">
+            <div class="naglowekSekcji">
+                <img src="./grafiki/frendzel.png">
+                <h2>ZNAJDŹ NAS</h2>
+                <img src="./grafiki/frendzel.png">
+            </div>
+            <div id="map">
+                <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Nowy%20Targ%20D%C5%82uga%20105+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"></iframe>
+                <p>Nowy Targ, ul. Długa 105</p>
+            </div>
+            <img src="grafiki/obrazkiDoTla/obrazekDoTla5.png" alt="Obrazek do tła">
+        </section>
+        <!--Godziny otwarcia + Kontakt + Stopka-->
+        <section id="kontakt">
+            <h2>GODZINY OTWARCIA</h2>
+            <p>
+                Poniedziałek - Piątek: <br>
+                9:00 - 22:00 <br>
+                Sobota - Niedziela: <br>
+                10:00 - 15:00
+            </p>
+            <h2>ZADZWOŃ DO NAS</h2>
+            <p>tel. 16 214 623 25</p>
+            
+            <footer>
+                <a href="index.html"><img src="./grafiki/logo.png" alt="logo restauracji"></a>
+                <div>
+                    <a href="https://www.facebook.com"><img src="./grafiki/socialMedia/facebook.png"></a>
+                    <a href="https://twitter.com"><img src="./grafiki/socialMedia/twitter.png"></a>
+                    <a href="https://www.instagram.com/?hl=pl"><img src="./grafiki/socialMedia/instagram.png"></a>
+                    <a href="https://pl.pinterest.com"><img src="./grafiki/socialMedia/pinterest.png"></a>
+                </div>
+                <p>Copyright &copy; by DZ</p>
+            </footer>
+        </section>
+    </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", ()=>{
+                let galeria = document.querySelectorAll("#zdjecia a");
+                galeria.forEach((element) => {
+                    element.addEventListener("click", (eveny)=>{
+                        event.preventDefault();
+                    })
+                })
+            })
+        </script>
+    </body>
+</html>
