@@ -367,7 +367,6 @@ h2{
 }
     /*      KONTAKT I STOPKA     */
 #kontakt{
-    width: unset;
     padding-top:100px;
     font-size: large;
 }
@@ -467,9 +466,9 @@ footer{
         margin:auto;
     }
     #map p {
-        font-size: 30px;
+        font-size: 30px !important;
     }
     #kontakt p {
-        font-size: 25px;
+        font-size: 25px !important;
     }
 }
