@@ -458,6 +458,7 @@ footer{
     #rezerwacja select, input[type="date"], input[type="time"]{
         background-size: 20px !important;
     }
+    #opinia > div{font-size: 25px !important;}
     #mapa > img{
         display: none;
     }
@@ -470,6 +471,5 @@ footer{
     }
     #kontakt p {
         font-size: 25px;
-        
     }
 }
