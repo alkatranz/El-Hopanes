@@ -412,19 +412,13 @@ footer{
 }
 @media only screen and (max-width: 760px){
     *{
-        font-size:large;
-    }
-    nav ul{
-        font-size:large;
+        font-size:large !important;
     }
     h1{
         font-size:40px;
     }
     h2{
         font-size: 30px;
-    }
-    header p{
-        font-size:large;
     }
     #tlo1, #tlo2{display:none;}
     #galeria{
@@ -455,7 +449,6 @@ footer{
         width: 100%;
         height: 100px;
         float: none !important;
-        font-size: large;
     }
     form>div{
         display: flex;
