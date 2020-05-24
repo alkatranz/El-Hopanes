@@ -432,6 +432,10 @@ footer{
     #galeria{
         height: unset;
     }
+    #szyld>div:nth-of-type(2) {
+	width: 300px;
+	height: 300px;
+    }
     #szyld p:first-of-type {
         font-size:20px !important;
     }
