@@ -18,6 +18,7 @@ main{
     width: 900px;
     text-align: center;
     position: relative;
+	box-sizing:border-box;
 }
 .tlo{
     height: 100%;
@@ -76,10 +77,11 @@ header{
     text-align: right;
 }
 nav{
-    width: 94%;
+    width: 100%;
     padding: 0 3% 0 3%;
     background-color: rgba(255, 255, 255, 0.37);
     height: 100px;
+	box-sizing:border-box;
 }
 
 ul{
@@ -129,7 +131,6 @@ header div:nth-of-type(2) p{
     margin-top: 20px;
 }
 header div:nth-of-type(2)>p:last-child{
-    background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.30) 100%);
     padding: 10px;
     font-size:xx-large;
@@ -391,33 +392,61 @@ footer{
 	background-image:url("./grafiki/tla/tlo2.jpg");
 	font-size:large;
 }
-    /*      MENU I ALKOHOLE     */
-#menu {
+    /*      PODSTRONY     */
+.alkohole {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
+    justify-content: center;
+    background-color: #1c1c1c;
 }
-#menu img{
-    width: 49%;
-    margin-bottom: 5px;
+.alkohole img{
+    width: 48%;
+	margin: 0 5px 5px 5px;
+	box-sizing:border-box;
 }
-#menu img:nth-child(odd){
-    margin-right: 5px;
-}
-#menu img:nth-child(even){
-    margin-right: 5px;
-}
-#menu img[src="./grafiki/menu.jpg"]{
+.menu{
     width: 100%;
+    background-image: url("./grafiki/tla/tlo3.jpg");
+    box-sizing:border-box;
 }
-@media only screen and (max-width: 760px) {
+.menu table{
+    margin:auto;
+    padding: 5px;
+    width: 50%;
+}
+.menu table th:first-child, .menu table td:first-child{
+    width: 75%;
+}
+.menu table th:last-child, .menu table td:last-child{
+    width: 25%;
+}
+#galeria_strona{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.kolumna{
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 3px;
+    justify-content: center;
+}
+.kolumna img {
+    margin-top: 8px;
+    width: 100%;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
     main{
         font-size:20px;
 		width:fit-content;
     }
 	nav{
 		font-size: 17px;
+		padding: 0;
 	}
     h1{
         font-size:40px;
@@ -432,10 +461,10 @@ footer{
     #galeria{
         height: unset;
     }
-    #szyld>div:nth-of-type(2) {
-	width: 300px;
-	height: 300px;
-    }
+	#szyld>div:nth-of-type(2){
+		width: 300px;
+		height: 300px;
+	}
     #szyld p:first-of-type {
         font-size:20px !important;
     }
@@ -489,6 +518,61 @@ footer{
     }
     #kontakt p {
         font-size: 25px;
-        
+    }
+    .menu table{
+        width: 100%;
+    }
+    .kolumna {
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+@media only screen and (max-width: 640px) {
+	*{box-sizing:border-box;}
+	nav{
+		height:fit-content;
+	}
+	nav>ul{
+		flex-direction:column;
+	}
+	nav li{
+		width:100%; 
+		font-size:25px;
+		order:2;
+	}
+	nav li:nth-child(4)
+	{
+		order:1;
+		width:150px;
+	}
+	header, header>section, header div:nth-of-type(2){
+		text-align:unset !important;
+	}
+	header div:nth-of-type(2){
+		padding:unset;
+		width: 100%;
+	}
+	header div:nth-of-type(2)>p:last-child {
+		background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4)50%,rgba(255,254,255,0) 100%);
+		right:unset;
+	}
+	header div:first-of-type, #szyld>div:nth-of-type(2){
+		display:none;
+	}
+	header div:nth-of-type(2) img{margin-right: 0;}
+	#szyld{padding-top:50px;}
+	#szyld>div:first-of-type{
+		width:100%;
+		padding: 0 20px;
+	}
+	.alkohole {
+	flex-direction: column;
+	}
+	.alkohole img{
+		width: 98%;
+    }
+    .kolumna {
+        flex: 100%;
+        max-width: 100%;
     }
 }
