@@ -95,7 +95,8 @@ nav li{
     width: 15%;
     margin: 5px;
 }
-nav img{
+
+nav img, nav a{
     width: 100%;
     height: 100%;
 }
@@ -367,6 +368,7 @@ h2{
 }
     /*      KONTAKT I STOPKA     */
 #kontakt{
+    width: unset;
     padding-top:100px;
     font-size: large;
 }
@@ -409,22 +411,29 @@ footer{
 #menu img[src="./grafiki/menu.jpg"]{
     width: 100%;
 }
-@media only screen and (max-width: 760px){
-    *{
-        font-size:large;
+@media only screen and (max-width: 760px) {
+    main{
+        font-size:20px;
+		width:100%;
     }
+	nav{
+		font-size: 17px;
+	}
     h1{
         font-size:40px;
     }
     h2{
         font-size: 30px;
     }
+	nav li:nth-child(4){
+		height:100%;
+	}
     #tlo1, #tlo2{display:none;}
     #galeria{
         height: unset;
     }
     #szyld p:first-of-type {
-        font-size:20px;
+        font-size:20px !important;
     }
     #zdjecia{
         flex-direction: row;
@@ -448,16 +457,22 @@ footer{
         width: 100%;
         height: 100px;
         float: none !important;
+        font-size: large;
     }
     form>div{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #rezerwacja select,#rezerwacja input,#rezerwacja input::placeholder, #rezerwacja label{
+        font-size: 20px;
+    }
     #rezerwacja select, input[type="date"], input[type="time"]{
         background-size: 20px !important;
     }
-    #opinia p{font-size: 25px !important;}
+    #opinia p{
+        font-size: 25px;
+    }
     #mapa > img{
         display: none;
     }
@@ -466,9 +481,10 @@ footer{
         margin:auto;
     }
     #map p {
-        font-size: 30px !important;
+        font-size: 30px;
     }
     #kontakt p {
-        font-size: 25px !important;
+        font-size: 25px;
+        
     }
 }
