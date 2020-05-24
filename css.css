@@ -414,7 +414,7 @@ footer{
 @media only screen and (max-width: 760px) {
     main{
         font-size:20px;
-		width:100%;
+		width:fit-content;
     }
 	nav{
 		font-size: 17px;
