@@ -23,21 +23,21 @@ main{
 .tlo{
     height: 100%;
     z-index: -1;
-    width: 100%;
-    left:0;
+    width: 450px;
     top:0;
     position: fixed;
     opacity: 0.5;
-    background-repeat: no-repeat ;
-    background-size: contain;
+
+}
+.tlo>img{
+    width: 100%;
+    height: 100%;
 }
 #tlo1{
-    background-image: url("./grafiki/obrazkiDoTla/obrazekDoTla6.png");
-    background-position: center left;
+    left:0
 }
 #tlo2{
-    background-image: url("./grafiki/obrazkiDoTla/obrazekDoTla7.png");
-    background-position: center right;
+    right: 0;
 }
 a{
     text-decoration: none;
@@ -46,7 +46,7 @@ a{
 section a{
     color:yellow;
 }
-section{
+section, header{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,6 +316,9 @@ h2{
     height: 100%;
 }
     /*      OPINIA      */
+#opinia{
+    height: fit-content;
+}
 #opinia>img{
     width: 100%;
     height: 550px;
@@ -325,7 +328,6 @@ h2{
     background-image: url("grafiki/obrazkiDoTla/obrazekDoTla4.jpg");
     padding-top:20px;
     padding-bottom:10px;
-    height: 130px;
     width: 100%;
     font-size:20px;
     color:yellow
@@ -439,10 +441,11 @@ footer{
     width: 100%;
     vertical-align: middle;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 900px) {
     main{
         font-size:20px;
-		width:fit-content;
+		width:100%;
     }
 	nav{
 		font-size: 17px;
@@ -465,17 +468,15 @@ footer{
 		width: 300px;
 		height: 300px;
 	}
-    #szyld p:first-of-type {
-        font-size:20px !important;
-    }
     #zdjecia{
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
     #zdjecia>a{
         flex-shrink: 0;
-        width: 49% !important;
+        width: 48% !important;
         height: 300px !important;
         flex:none;
         margin:4px;
@@ -496,15 +497,13 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 80% !important;
     }
     #rezerwacja select,#rezerwacja input,#rezerwacja input::placeholder, #rezerwacja label{
         font-size: 20px;
     }
     #rezerwacja select, input[type="date"], input[type="time"]{
         background-size: 20px !important;
-    }
-    #opinia p{
-        font-size: 25px;
     }
     #mapa > img{
         display: none;
@@ -516,19 +515,23 @@ footer{
     #map p {
         font-size: 30px;
     }
-    #kontakt p {
-        font-size: 25px;
-    }
     .menu table{
         width: 100%;
+        font-size:larger;
     }
     .kolumna {
         flex: 49%;
         max-width: 49%;
     }
+    p{
+        font-size:20px;
+    }
 }
-@media only screen and (max-width: 640px) {
-	*{box-sizing:border-box;}
+@media only screen and (max-width: 680px) {
+    *{box-sizing:border-box;}
+    form>div{
+        width: 90% !important;
+    }
 	nav{
 		height:fit-content;
 	}
@@ -564,7 +567,10 @@ footer{
 	#szyld>div:first-of-type{
 		width:100%;
 		padding: 0 20px;
-	}
+    }
+    #opinia>img{
+        height: 350px;
+    }
 	.alkohole {
 	flex-direction: column;
 	}
@@ -574,5 +580,24 @@ footer{
     .kolumna {
         flex: 100%;
         max-width: 100%;
+    }
+    p{
+        font-size: 25px !important
+    }
+}
+@media only screen and (max-width:500px){
+    #zdjecia{
+        flex-direction: column;
+    }
+    #zdjecia>a{
+        width: 90%!important;
+    }
+    #map{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:400px){
+    .naglowekSekcji img{
+        display: none;
     }
 }
